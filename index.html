@@ -10,10 +10,13 @@
 </head>
 <body>
     <header>
+   
     <h1>Welcome to Charles BAUDELAIRE poems in prose generator!!!</h1>
+    <img src="src/photo.jpeg" alt="Charles Badelaire photo" class="photo">
 </header>
 <main>
-    <form id="poem-generator-form">
+    <div class="form-wrapper">
+    <form class="form-container" id="poem-generator-form">
         <input type="text" placeholder="Enter the title of the poem in prose"
         autofocus
         required
@@ -24,10 +27,9 @@
         id="user-instructions"
         />
     </form>
-    <div class="word-examples">
-i.e imagination, spleen, wine, city, stranger...
+<div class="hint">i.e imagination, spleen, wine, city, stranger...</div>
     </div>
-    <div class="poem" id="poem">
+    <div class="poem hidden" id="poem">
     </div>
 </main>
     <footer>
