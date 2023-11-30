@@ -9,26 +9,31 @@
     <title>AI Poem Generator</title>
 </head>
 <body>
+    <div class="container">
     <header>
-   
-    <h1>Welcome to Charles BAUDELAIRE poems in prose generator!!!</h1>
+    <h1>Welcome to CHARLES BAUDELAIRE poems in prose 
+        <br/>
+        generator!!!</h1>
     <img src="src/photo.jpeg" alt="Charles Badelaire photo" class="photo">
 </header>
 <main>
-    <div class="form-wrapper">
-    <form class="form-container" id="poem-generator-form">
-        <input type="text" placeholder="Enter the title of the poem in prose"
+    <div class="form-container">
+    <form id="poem-generator-form">
+        <input 
+        type="text" 
+        placeholder="Enter any keyword of the poem in prose..."
         autofocus
         required
         autocomplete="off"
-        class="instructions"/>
-        <input type="submit"
+        class="instructions"
+        id="user-instructions"/>
+        <input 
+        type="submit"
         class="submit-button"
-        id="user-instructions"
         />
     </form>
-<div class="hint">i.e imagination, spleen, wine, city, stranger...</div>
-    </div>
+    <div class="hint">i.e imagination, spleen, wine, city, stranger...</div>
+</div>
     <div class="poem hidden" id="poem">
     </div>
 </main>
@@ -36,8 +41,9 @@
         This AI project is coded by Yana Yaman and is 
         <a href="https://github.com/YanaJS/Charles_Baudelaire_Poems_in_Prose_Generator/tree/main/src" target="_blank"> open-sourced on GitHub </a>
         and hosted on 
-        <a href="https://app.netlify.com/sites/incomparable-jalebi-1bf934/overview" target="_blank"> Netlify </a>
+        <a href="https://app.netlify.com/sites/incomparable-jalebi-1bf934/overview" target="_blank"> Netlify </a>.
     </footer>
+</div>
     <script src="src/index.js"></script>
 </body>
 </html>
